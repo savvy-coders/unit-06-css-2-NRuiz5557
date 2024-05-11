@@ -1,1 +1,61 @@
 /* Yep. Nothing. You've got this though! Refer back to the curriculum wherever necessary! */
+.box {
+    background-color: lightblue;
+    width: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.box-with-margin {
+    margin: 30px;
+}
+.static-element { 
+    position: relative;
+}
+.relative-element {
+    position: relative;
+    left: 50px
+}
+.absolute-element {
+    position: relative;
+    top: 150px;
+}
+.fixed-element {
+    position: fixed;
+    bottom: 50px;
+    right: 0px;
+}
+.column {
+    border: 1px solid lightgray;
+    float: right;
+    width: 100%;
+    height: 50%
+}
+.container {
+    display: position inline-flex;
+}
+.item {
+    width: 200px;
+    margin-right: 20px; 
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: (4,1fr);
+    grid-template-rows: (3,1fr);
+    grid-template-areas:
+     "header"
+     "sidebar"
+     "main"
+     "footer";
+}
+.header {
+    grid-area: header;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+.main{
+    grid-area: main;
+}
+.footer{
+    grid-area: footer;
+}
